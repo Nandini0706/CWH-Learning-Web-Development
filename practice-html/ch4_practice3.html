@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Player Scores</title>
+    <style>
+        /* Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: white;
+        }
+
+        /* Heading */
+        h1 {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 2.5rem;
+            color: #38bdf8;
+            text-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+        }
+
+        /* Horizontal Line */
+        hr {
+            width: 70%;
+            margin: 0 auto 35px auto;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Table Styling */
+        table {
+            width: 85%;
+            margin: auto;
+            border-collapse: collapse;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Table Header */
+        thead {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+        }
+
+        thead th {
+            padding: 18px;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        /* Table Body */
+        tbody td {
+            padding: 16px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: 0.3s ease;
+        }
+
+        /* Hover Effect */
+        tbody tr:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: scale(1.01);
+        }
+
+        /* Alternate Row Colors */
+        tbody tr:nth-child(even) {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Last Row Border Remove */
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            thead th,
+            tbody td {
+                padding: 12px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Score of Cricket Players in T-20 2026</h1>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Runs</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rohit Sharma</td>
+                <td>35</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>MS Dhoni</td>
+                <td>42</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Virat Kholi</td>
+                <td>38</td>
+                <td>64</td>
+            </tr>
+            <tr>
+                <td>Sachine Tendulkar</td>
+                <td>54</td>
+                <td>0</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>

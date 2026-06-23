@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Color NavBar</title>
+    <style>
+        :root {
+            --pcolor: rgb(10, 9, 10);
+            --scolour: rgb(236, 206, 9);
+            --tcolor: rgb(197, 142, 80);
+
+        }
+
+        body{
+            background-color: var(--pcolor);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .navbar {
+            background-color: var(--pcolor);
+            color: var(--scolour);
+            position: sticky;
+            top: 0;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        ul li {
+            padding: 20px;
+
+        }
+
+        li:hover {
+            background-color: var(--tcolor);
+            color: white;
+        }
+
+        .body{
+            --tcolor: white;
+            background-color: var(--scolour);
+            color: var(--tcolor);
+            width: 50vw;
+            margin-left: 25vw;
+            height: 200vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Gallery</li>
+        </ul>
+    </div>
+    <div class="body">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, quasi. Ex error nam velit iste itaque! In
+            illum blanditiis consequatur ratione explicabo, fuga natus suscipit deleniti sunt soluta commodi doloribus
+            at autem ipsam id, porro eveniet quae dolorum voluptatibus veritatis! Odit ad ea aspernatur voluptate,
+            ducimus, voluptatem amet ipsum quia distinctio impedit, exercitationem et mollitia tempora similique veniam
+            possimus modi neque? Accusamus magnam dolor quos, sint voluptatum, aperiam molestiae unde nemo iste vel
+            veniam ea laudantium impedit voluptas ipsum repellendus. Consectetur esse incidunt, et ipsam recusandae cum
+            aperiam vero nihil deleniti doloremque, maiores commodi labore dolorum. Voluptas optio laudantium autem vero
+            cum hic labore delectus, iure officia aliquam porro voluptate suscipit expedita necessitatibus? Repudiandae
+            id ipsa reprehenderit dolor soluta dolore aliquam, odit assumenda temporibus? Pariatur voluptas a vel odit
+            reiciendis doloremque est dolorum, esse eos temporibus quaerat quod et aut molestiae ab neque impedit?
+            Quisquam veniam exercitationem nihil obcaecati autem repudiandae? Ducimus maxime natus quidem quod quam rem!
+            Dolores deserunt provident laborum? Voluptatum deleniti ea nobis aspernatur dignissimos, minima distinctio
+            veniam fugiat repudiandae consequuntur accusantium, eligendi eos. Temporibus tenetur ratione nostrum! Dicta
+            dolore beatae voluptate et eos ratione nobis dolor odio! Consequuntur neque commodi animi totam non, harum
+            beatae dicta.
+        </p>
+    </div>
+</body>
+
+</html>

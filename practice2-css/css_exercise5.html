@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            overflow-x: hidden;
+        }
+
+        header{
+            position: sticky;
+            top: 0;
+        }
+        .navbar{
+            padding: 20px;
+            background-color: purple;
+            
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 20px;
+            
+
+        }
+
+        .boxes {
+            text-align: center;
+            margin: 18px;
+            background-color: green;
+            height: 100vh;
+
+
+        }
+
+        .box {
+            display: inline-block;
+            border: 2px solid white;
+            height: 80%;
+            width: 38%;
+            margin: 5%;
+
+        }
+
+        .box1 {
+            background-color: rgb(214, 69, 93);
+        }
+
+        .box2 {
+            background-color: rgb(6, 163, 248);
+        }
+
+        .text {
+            border-radius: 30px;
+            margin-left: 133px;
+            height: 30vh;
+            border: 2px solid white;
+            width: 76vw;
+            text-align: center;
+            margin-top: 28px;
+
+        }
+
+        .text p {
+            font-size: 35px;
+            margin-top: 67px;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            background-color: white;
+            height: 44px;
+            margin-top: 20px;
+        }
+
+        .logo {
+            position: fixed;
+            right: 20px;
+            bottom: 10px;
+            border-radius: 50px;
+        }
+
+
+        .last {
+            padding: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="boxes">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+        </div>
+        <div class="logo">
+            <img src="https://i.pinimg.com/736x/7c/e8/6b/7ce86b5a8009737eb8bc8ac5d9d23889.jpg" alt=""
+                height="70px">
+        </div>
+        <div class="text">
+            <p>
+                Welcome To Sigma Web Development Course
+            </p>
+        </div>
+        
+
+    </main>
+    <footer>
+        <div class="last">Made With Love</div>
+    </footer>
+</body>
+
+</html>

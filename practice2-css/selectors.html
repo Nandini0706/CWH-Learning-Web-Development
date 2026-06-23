@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS selectors</title>
+    <style>
+        ::selection{
+            background-color: red;
+            color: white;
+        }
+
+
+        .boxes{
+            background-color: grey;
+        }
+        .box:first-child{
+            background-color: pink;
+        }
+        .box:nth-child(even){
+            color: blue;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .boxes::before{
+            content: "This is practice";
+            color: red;
+
+        }
+        .boxes::after{
+            content: "This is after boxes";
+            color: yellow;
+        }
+
+        .box:nth-last-child(1){
+            background-color: purple;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">i am box 1</div>
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit veritatis exercitationem
+            quam sed fugit eligendi sit. Itaque deleniti aliquam voluptate quos, quo quia. Voluptates quibusdam fuga
+            atque accusantium ex totam quaerat molestias voluptas. Enim, quae velit? Maiores delectus sequi ullam,
+            inventore totam ratione ea.
+        </div>
+        <div class="box">i am last box</div>
+    </div>
+</body>
+
+</html>

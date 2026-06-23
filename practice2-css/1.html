@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning CSS</title>
+    <style>
+        h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 70px;
+            font-style: italic;
+            font-size: 50px;
+        }
+        section{
+            text-decoration: underline;
+            text-transform: uppercase;
+            text-decoration-thickness: 3px;
+            text-decoration-style: wavy;
+            text-decoration-color: black;
+
+        }
+        div {
+            color: pink;
+            background-color: black;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        #blue {
+            color: blue;
+        }
+
+        div > p{
+            color: purple;
+        }
+
+        /* div p{
+            color: yellow;
+        } */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        a:hover{
+            color: yellow;
+        }
+        a:active{
+            color: green;
+        }
+        a:visited{
+            color: black;
+        }
+
+        p:first-child{
+            background-color: brown;
+        }
+
+        p:nth-of-type(2){
+            color: brown;
+        }
+        .style{
+            text-align: center;
+            text-indent: 0px;
+            border: 2px solid yellow;
+            width: 100px;
+            text-overflow:ellipsis;
+            overflow: hidden;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hello! My name is Nandini Jain</h1>
+        <p class="style">I am currently pursuing B.Tech in AIML. I am 21 years old. I want to be a Full STack ML ENgineer.
+            Hope my journey goes well.
+        </p>
+        <p>I am another second child para in div</p>
+        <section>
+            <p>I am a paragraph in section</p>
+        </section>
+    </div>
+    <div class="red">I am in red class</div>
+    <div id="blue">My ID is blue</div>
+    <a href="https://www.google.com">Go to Google</a>
+</body>
+</html>
